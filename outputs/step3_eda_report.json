@@ -1,0 +1,138 @@
+{
+    "experience": {
+        "min": 1.0,
+        "max": 16.9,
+        "mean": 7.1663190000000005,
+        "median": 6.8,
+        "std": 3.8245321661922262
+    },
+    "career_entries": {
+        "min": 1.0,
+        "max": 9.0,
+        "mean": 3.00171,
+        "median": 3.0,
+        "std": 1.522434588381386
+    },
+    "skill_counts": {
+        "min": 5.0,
+        "max": 23.0,
+        "mean": 9.60302,
+        "median": 9.0,
+        "std": 3.311613938791779
+    },
+    "signals": {
+        "profile_completeness_score": {
+            "min": 25.0,
+            "max": 99.9,
+            "mean": 56.75818,
+            "median": 56.8,
+            "std": 17.27398310429879
+        },
+        "profile_views_received_30d": {
+            "min": 0.0,
+            "max": 374.0,
+            "mean": 47.98525,
+            "median": 45.0,
+            "std": 32.051709664813515
+        },
+        "applications_submitted_30d": {
+            "min": 0.0,
+            "max": 24.0,
+            "mean": 5.39036,
+            "median": 5.0,
+            "std": 3.4947788299690727
+        },
+        "recruiter_response_rate": {
+            "min": 0.02,
+            "max": 0.95,
+            "mean": 0.4365736,
+            "median": 0.44,
+            "std": 0.21412100733706632
+        },
+        "avg_response_time_hours": {
+            "min": 2.1,
+            "max": 280.0,
+            "mean": 132.702744,
+            "median": 129.9,
+            "std": 75.23786523467066
+        },
+        "connection_count": {
+            "min": 10.0,
+            "max": 1898.0,
+            "mean": 345.66489,
+            "median": 335.0,
+            "std": 208.1446531412419
+        },
+        "endorsements_received": {
+            "min": 0.0,
+            "max": 242.0,
+            "mean": 30.06857,
+            "median": 28.0,
+            "std": 20.242745568600622
+        },
+        "notice_period_days": {
+            "min": 0.0,
+            "max": 150.0,
+            "mean": 87.3858,
+            "median": 90.0,
+            "std": 36.58944463038487
+        },
+        "github_activity_score": {
+            "min": 0.0,
+            "max": 96.9,
+            "mean": 29.029211322568788,
+            "median": 28.4,
+            "std": 17.58428508957226
+        },
+        "search_appearance_30d": {
+            "min": 0.0,
+            "max": 1490.0,
+            "mean": 117.5438,
+            "median": 105.0,
+            "std": 92.82542702061758
+        },
+        "saved_by_recruiters_30d": {
+            "min": 0.0,
+            "max": 80.0,
+            "mean": 7.6587,
+            "median": 7.0,
+            "std": 5.921406446951603
+        },
+        "interview_completion_rate": {
+            "min": 0.3,
+            "max": 1.0,
+            "mean": 0.6195099,
+            "median": 0.62,
+            "std": 0.17066069495343678
+        },
+        "offer_acceptance_rate": {
+            "min": 0.15,
+            "max": 0.93,
+            "mean": 0.4745477921178856,
+            "median": 0.48,
+            "std": 0.17744348663410006
+        }
+    },
+    "sparse_assessment": {
+        "populate_pct": 24.244,
+        "items_per_candidate": {
+            "min": 1.0,
+            "max": 5.0,
+            "mean": 1.480572512786669,
+            "median": 1.0,
+            "std": 0.895317929333014
+        },
+        "score_distribution": {
+            "min": 20.0,
+            "max": 97.3,
+            "mean": 52.91910851093467,
+            "median": 53.1,
+            "std": 15.778543535149476
+        }
+    },
+    "sanity_checks": {
+        "exp_career_mismatch_count": 25,
+        "overlapping_current_jobs": 0
+    },
+    "near_duplicates": "Skipped complex shingling in this pass to remain under 5min runtime. Exact match clusters found 5,680 records."
+}

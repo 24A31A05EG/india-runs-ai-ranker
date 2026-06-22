@@ -1,0 +1,33 @@
+{
+    "total_records": 100000,
+    "exact_duplicates_found": 0,
+    "field_missingness_pct": {},
+    "signal_presence_counts": {
+        "profile_completeness_score": 100000,
+        "signup_date": 100000,
+        "last_active_date": 100000,
+        "open_to_work_flag": 100000,
+        "profile_views_received_30d": 100000,
+        "applications_submitted_30d": 100000,
+        "recruiter_response_rate": 100000,
+        "avg_response_time_hours": 100000,
+        "skill_assessment_scores": 100000,
+        "connection_count": 100000,
+        "endorsements_received": 100000,
+        "notice_period_days": 100000,
+        "expected_salary_range_inr_lpa": 100000,
+        "preferred_work_mode": 100000,
+        "willing_to_relocate": 100000,
+        "github_activity_score": 100000,
+        "search_appearance_30d": 100000,
+        "saved_by_recruiters_30d": 100000,
+        "interview_completion_rate": 100000,
+        "offer_acceptance_rate": 100000,
+        "verified_email": 100000,
+        "verified_phone": 100000,
+        "linkedin_connected": 100000
+    },
+    "expected_signals_absent": [
+        "expected_salary_range_inr_lpa.min / .max"
+    ]
+}

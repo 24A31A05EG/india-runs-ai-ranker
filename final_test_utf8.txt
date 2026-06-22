@@ -1,0 +1,4 @@
+ candidate_id  score_skills  score_experience  score_behavioral  fake_penalty  final_score                                                                 reasoning
+  CAND_REAL_1     13.636364         70.000000              80.0             0    50.454545 Must-haves: embeddings, pinecone, python. Skill:14, Exp:70, Beh:80, Dup:0
+CAND_OVER_EXP     13.636364         63.333333              80.0             0    48.454545 Must-haves: embeddings, pinecone, python. Skill:14, Exp:63, Beh:80, Dup:0
+  CAND_TRAP_2      0.000000         70.000000              50.0             0    36.000000                              Must-haves: . Skill:0, Exp:70, Beh:50, Dup:0

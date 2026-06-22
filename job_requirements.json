@@ -1,0 +1,53 @@
+{
+  "must_have": [
+    "embeddings",
+    "vector-databases",
+    "vector-search",
+    "faiss",
+    "pinecone",
+    "milvus",
+    "weaviate",
+    "qdrant",
+    "elasticsearch",
+    "opensearch",
+    "python",
+    "ranking-systems",
+    "ranking-evaluation",
+    "ndcg",
+    "mrr",
+    "map",
+    "learning-to-rank",
+    "information-retrieval"
+  ],
+  "preferred": [
+    "lora",
+    "qlora",
+    "peft",
+    "xgboost",
+    "neural",
+    "hr-tech",
+    "distributed",
+    "open-source"
+  ],
+  "disqualifiers": {
+    "firms": [
+      "tcs",
+      "infosys",
+      "wipro",
+      "accenture",
+      "cognizant",
+      "capgemini",
+      "hcl",
+      "tech mahindra"
+    ],
+    "experience_band": {
+      "min_years": 5,
+      "max_years": 12,
+      "ideal_min": 5,
+      "ideal_max": 9
+    },
+    "job_hop_threshold_years": 1.5,
+    "max_architect_idle_months": 18
+  },
+  "tag_only_skills": ["map", "python"]
+}

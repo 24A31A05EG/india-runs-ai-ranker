@@ -1,0 +1,50 @@
+{
+    "histogram": {
+        "2": 2427,
+        "3": 243,
+        "4-9": 24
+    },
+    "total_duplicate_records": 5680,
+    "top_10_clusters": [
+        {
+            "size": 5,
+            "excerpt": "Mechanical Engineer | Driving business outcomes | Professional with 2.3+ years of experience. I've spent my career in marketing manager roles, mostly focused on driving outcomes through process, peopl"
+        },
+        {
+            "size": 4,
+            "excerpt": "Business Analyst | Helping teams scale | Professional with 1.1+ years of experience. My professional background is in marketing manager \u2014 I've built and led teams, owned KPIs, and driven business outc"
+        },
+        {
+            "size": 4,
+            "excerpt": "Cloud Engineer | Cloud & DevOps | Software engineer with 1.6 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. I've spent most "
+        },
+        {
+            "size": 4,
+            "excerpt": ".NET Developer | Cloud & DevOps | Software engineer with 1.6 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. I've spent most "
+        },
+        {
+            "size": 4,
+            "excerpt": "HR Manager | Driving business outcomes | Professional with 1.5+ years of experience. I've spent my career in marketing manager roles, mostly focused on driving outcomes through process, people, and cu"
+        },
+        {
+            "size": 4,
+            "excerpt": "Business Analyst | 1.4+ yrs experience | Professional with 1.4+ years of experience. I've spent my career in marketing manager roles, mostly focused on driving outcomes through process, people, and cu"
+        },
+        {
+            "size": 4,
+            "excerpt": "Sales Executive | 1.6+ yrs experience | Professional with 1.6+ years of experience. My professional background is in marketing manager \u2014 I've built and led teams, owned KPIs, and driven business outco"
+        },
+        {
+            "size": 4,
+            "excerpt": "Software Engineer | Full-stack development | Software engineer with 1.1 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. My ba"
+        },
+        {
+            "size": 4,
+            "excerpt": "Java Developer | Full-stack development | Software engineer with 1.4 years of experience across web, backend, and cloud systems. Strong fundamentals in software development and system design. I've spe"
+        },
+        {
+            "size": 4,
+            "excerpt": "Accountant | Driving business outcomes | Professional with 2.9+ years of experience. I'm a marketing manager with substantial experience in cross-functional collaboration, stakeholder management, and "
+        }
+    ]
+}

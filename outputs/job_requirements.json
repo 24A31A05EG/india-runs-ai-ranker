@@ -1,0 +1,34 @@
+{
+    "must_have": [
+        "Production experience with embeddings-based retrieval systems (sentence-transformers, OpenAI embeddings, BGE, E5, or similar) deployed to real users.",
+        "Production experience with vector databases or hybrid search infrastructure (Pinecone, Weaviate, Qdrant, Milvus, OpenSearch, Elasticsearch, FAISS, or similar).",
+        "Strong Python (code quality focus).",
+        "Hands-on experience designing evaluation frameworks for ranking systems (NDCG, MRR, MAP, offline-to-online correlation, A/B test interpretation)."
+    ],
+    "preferred": [
+        "LLM fine-tuning experience (LoRA, QLoRA, PEFT).",
+        "Experience with learning-to-rank models (XGBoost-based or neural).",
+        "Prior exposure to HR-tech, recruiting tech, or marketplace products.",
+        "Background in distributed systems or large-scale inference optimization.",
+        "Open-source contributions in the AI/ML space."
+    ],
+    "experience": {
+        "stated_range": "5-9 years",
+        "ideal_profile": "6-8 years total experience, of which 4-5 are in applied ML/AI roles at product companies."
+    },
+    "disqualifiers": [
+        "Pure research environments (academic labs, research-only roles) without production deployment.",
+        "Recent AI experience (<12 months) consisting primarily of LangChain/OpenAI projects.",
+        "Senior engineers who haven't written production code in the last 18 months.",
+        "Title-chasers switching companies every 1.5 years.",
+        "Candidates whose entire career is at consulting firms (TCS, Infosys, Wipro, Accenture, Cognizant, Capgemini, etc.).",
+        "Primary expertise in CV, speech, or robotics without significant NLP/IR exposure."
+    ],
+    "seniority_signals": [
+        "Owning the ranking, retrieval, and matching systems (intelligence layer).",
+        "Shipped at least one end-to-end ranking, search, or recommendation system to real users at meaningful scale.",
+        "Strong opinions on hybrid vs dense retrieval and offline vs online evaluation.",
+        "Mentoring experience and long-term architecture ownership."
+    ],
+    "_status": "VERIFIED"
+}
