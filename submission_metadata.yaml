@@ -1,0 +1,102 @@
+# Redrob Hackathon — Submission Metadata
+# Team: Rolelytix<
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "Rolelytix"
+
+primary_contact:
+  name: "Majji Kavya"
+  email: "majjikavya82@gmail.com"
+  phone: "+91-7993661649"
+
+team_members:
+  - name: "Polaki Kesava Datta"
+    email: "polakikesavadatta27@gmail.com"
+    role: "Scoring & Ranking Engineer"
+  - name: "Palla Sanjay Nishanth"
+    email: "sanjaynishanth99@gmail.com"
+    role: "Trust & Anomaly Detection Engineer"
+  - name: "Majji Kavya"
+    email: "majjikavya82@gmail.com"
+    role: "Output Generation & QA / Team Lead"
+  - name: "Donga Dhanushya"
+    email: "dhanushya0197@gmail.com"
+    role: "Team Member"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/24A31A05EG/india-runs-ai-ranker"
+
+sandbox_link: "https://colab.research.google.com/drive/1jo5AzeV4qJuWw7wadYPP5q0Z4nZ5iDNf?usp=sharing"
+
+# NOTE: rank.py currently has no CLI arguments — it reads the data path from
+# the CONFIG dict hardcoded at the top of the file. Documented exactly as run:
+reproduce_command: "python rank.py"
+# Before running, ensure candidates.jsonl is placed at the path set in
+# CONFIG["data_path"] inside rank.py (see README.md for the exact folder
+# structure expected).
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Personal laptop, Windows 11 Home Single Language"
+  cpu_cores: 4
+  ram_gb: 8
+  python_version: "3.13"
+  os: "Microsoft Windows 11 Home Single Language"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Claude"
+  # Add any others actually used, e.g. "ChatGPT", "GitHub Copilot", "Cursor"
+
+ai_usage_summary: |
+  Used Claude throughout development for: debugging pipeline errors (module
+  imports, file-path resolution, CSV encoding issues), fixing CSV
+  format/header compliance against the submission spec, designing and
+  implementing the rule-based, template-driven reasoning generator (which
+  reuses each candidate's own matched-skill data from the scoring step --
+  no candidate data was sent to any external LLM API during ranking),
+  validating outputs against validate_submission.py, and reviewing the
+  honeypot self-check methodology. All scoring, trust/anomaly detection,
+  and ranking logic in rank.py was engineered and tested by the team.
+
+# ============================================================================
+# Approach summary (optional but recommended)
+# ============================================================================
+methodology_summary: |
+  Two-phase rule-based ranker. Phase 1 cleans and de-duplicates the 100K
+  candidate pool (near-duplicate resume clustering via headline+summary+
+  career-text concatenation) and engineers features: total years of
+  experience, role/title signals, and 23 behavioral signals from the
+  redrob_signals object. Phase 2 scores each candidate on three independent
+  components -- skill match against the JD's frozen must-have/preferred
+  skill lists, experience relevance, and a behavioral signal score -- then
+  applies a trust layer that flags anomalies (experience-mismatch,
+  behavioral-outlier, skill-text inconsistency, etc.) and computes a
+  fake-probability and trust tier per candidate, penalizing or excluding
+  high-risk profiles before final ranking. Reasoning strings for the top
+  100 are generated with a deterministic template that surfaces each
+  candidate's actual matched must-have skills, experience, and one honest
+  concern or strength signal -- no free-text generation, no LLM calls.
+  End-to-end runtime on the full 100K pool: ~27 seconds on CPU.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
