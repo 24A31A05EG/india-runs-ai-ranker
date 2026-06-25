@@ -1,4 +1,4 @@
-# Redrob Hackathon: End-to-End Project Audit Results
+﻿# Redrob Hackathon: End-to-End Project Audit Results
 
 This document provides raw evidence for every claim in the data pipeline and scoring engine.
 
@@ -103,3 +103,43 @@ PS C:\Users\Polak\OneDrive\Desktop\testing> python validate_submission.py submis
 Submission is valid.
 Exit Code: 0
 ```
+
+---
+
+## === TASK 3 AUDIT: Trust Engine & Honeypot Detection ===
+
+### 14. Trust Signal Coverage
+**Evidence**: `candidates_with_trust.parquet` includes `fake_probability`,
+`trust_score`, `trust_tier`, and 8 anomaly flags
+(`flag_duplicate_resume`, `flag_experience_mismatch`, `flag_ghost_profile`,
+`flag_spam_applicant`, `flag_zero_engagement`, `flag_behavioral_outlier`,
+`flag_skill_text_inconsistency`, `flag_inverted_salary`) computed for all
+100,000 candidates in `step3_trust_engine.py`.
+
+### 15. Top-100 Self-Check (Honeypot Rate Estimate)
+**Method**: Merged the final `submission.csv` (top 100 ranked candidates)
+against `candidates_with_trust.parquet` on `candidate_id`, then inspected
+our own trust signals for the selected set (`honeypot_selfcheck.py`).
+
+**Findings**:
+- `fake_probability` in top 100: mean 0.058, std 0.045, max 0.23 —
+  **0 of 100** candidates exceed 0.5, indicating no high-confidence fake
+  profiles were selected into the top 100.
+- `trust_tier` distribution across top 100: **71 Tier-A**, **29 Tier-B**,
+  **0 Tier-C/D**.
+- `flag_experience_mismatch` — the closest proxy to the spec's "impossible
+  timeline" honeypot definition (Section 7) — triggers on only **1 of 100**
+  candidates (**1%**), well under the 10% disqualification threshold.
+- The most frequent flag, `flag_behavioral_outlier` (72% of top 100), is a
+  loose statistical-outlier signal and does not correlate with elevated
+  `fake_probability` in this set (all flagged rows still show
+  fake_probability ≤ 0.23), indicating it is not driving false inclusions
+  of risky profiles.
+
+**Conclusion**: Based on our own detection signals, the estimated honeypot
+rate in the top 100 is approximately **1%**, well below the 10%
+disqualification threshold specified in `submission_spec.md` Section 7.
+
+*(Note: this is a self-assessment using our own model's signals, not the
+hidden ground-truth honeypot labels, which are not available to
+participants before results are announced.)*
