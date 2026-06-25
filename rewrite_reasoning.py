@@ -33,7 +33,7 @@ def extract_must_haves(old_reasoning: str, skills_list):
     Falls back to the candidate's own skills_list if the original
     'Must-haves:' pattern is no longer present (e.g. script already ran once)."""
     if isinstance(old_reasoning, str):
-        m = re.search(r"Must-haves:\s*(.*?)\.\s*Skill:", old_reasoning)
+        m = re.search(r"(?:Matched\s+)?Must-[Hh]aves:\s*(.*?)\.\s*(?:Skill:|Score:)", old_reasoning)
         if m:
             skills = [s.strip() for s in m.group(1).split(",") if s.strip()]
             if skills:
