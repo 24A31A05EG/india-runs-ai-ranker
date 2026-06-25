@@ -1,4 +1,4 @@
-candidate_id,headline,summary,total_years_exp,skills_list,is_duplicate_resume,num_roles,avg_tenure_months,num_career_gaps,has_overlapping_roles,job_switch_rate_per_year,career_span_years,exp_career_mismatch,career_descriptions,avg_assessment_score,sig_recruiter_response_rate,skill_raw,matched_must,score_skills,score_experience,score_behavioral,fake_penalty,final_score,rank,reasoning
-CAND_REAL_1,AI Engineer,Experienced in Vector Databases.,7.0,"python,pinecone",False,1,0.0,0,False,0.14285714285714285,6.997946611909651,False,Implemented embeddings search.,,0.8,6,"embeddings, pinecone, python",13.636363636363635,70.0,80.0,0,50.45454545454545,1,"Must-haves: embeddings, pinecone, python. Skill:14, Exp:70, Beh:80, Dup:0"
-CAND_OVER_EXP,Staff AI Engineer,Experienced in Vector Databases.,11.0,"python,pinecone",False,1,0.0,0,False,0.09090909090909091,10.99794661190965,False,Implemented embeddings search.,,0.8,6,"embeddings, pinecone, python",13.636363636363635,63.33333333333333,80.0,0,48.45454545454545,2,"Must-haves: embeddings, pinecone, python. Skill:14, Exp:63, Beh:80, Dup:0"
-CAND_TRAP_2,Embedded dev,Micropython expert,5.0,c++,False,1,0.0,0,False,0.2,4.999315537303217,False,Used map() function.,,,0,,0.0,70.0,50.0,0,36.0,3,"Must-haves: . Skill:0, Exp:70, Beh:50, Dup:0"
+Rank,Candidate ID,Score,Reason
+1,CAND_REAL_1,43.78787878787878,"Must-haves: embeddings, pinecone, python. Skill:14 Exp:70 Beh:51 Pen:0 | Trust:B(50) FakeP:0.00"
+2,CAND_OVER_EXP,41.78787878787878,"Must-haves: embeddings, pinecone, python. Skill:14 Exp:63 Beh:51 Pen:0 | Trust:B(50) FakeP:0.00"
+3,CAND_TRAP_2,35.0,Must-haves: . Skill:0 Exp:70 Beh:40 Pen:0 | Trust:B(50) FakeP:0.00
